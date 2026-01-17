@@ -1,0 +1,238 @@
+/* Admin-specific styles */
+
+.admin {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    min-height: 100vh;
+}
+
+.admin-header {
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-3) var(--space-4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-nav {
+    display: flex;
+    gap: var(--space-4);
+}
+
+.admin-nav a {
+    color: var(--color-muted);
+    transition: color 0.15s;
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+    color: var(--color-text);
+}
+
+.admin-main {
+    padding: var(--space-4);
+    max-width: 900px;
+}
+
+.admin-section {
+    margin-bottom: var(--space-5);
+}
+
+.admin-title {
+    font-size: var(--text-base);
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-muted);
+}
+
+/* Form elements */
+.admin-input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    padding: var(--space-2) var(--space-3);
+    color: var(--color-text);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+}
+
+.admin-input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.admin-input::placeholder {
+    color: var(--color-muted);
+}
+
+.admin-textarea {
+    width: 100%;
+    min-height: 400px;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    padding: var(--space-3);
+    color: var(--color-text);
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    resize: vertical;
+}
+
+.admin-textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.admin-label {
+    display: block;
+    font-size: var(--text-xs);
+    color: var(--color-muted);
+    margin-bottom: var(--space-1);
+    text-transform: lowercase;
+}
+
+.admin-field {
+    margin-bottom: var(--space-3);
+}
+
+/* Buttons */
+.admin-btn {
+    font-family: var(--font-mono);
+    font-size: var(--text-sm);
+    padding: var(--space-2) var(--space-3);
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.admin-btn:hover {
+    border-color: var(--color-text);
+}
+
+.admin-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.admin-btn-primary {
+    background: var(--color-text);
+    color: var(--color-bg);
+    border-color: var(--color-text);
+}
+
+.admin-btn-primary:hover {
+    opacity: 0.9;
+}
+
+.admin-btn-danger {
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.admin-btn-danger:hover {
+    background: #ef4444;
+    color: var(--color-bg);
+}
+
+.admin-actions {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+}
+
+/* Tables */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+    text-align: left;
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.admin-table th {
+    font-weight: 400;
+    color: var(--color-muted);
+    font-size: var(--text-xs);
+    text-transform: uppercase;
+}
+
+.admin-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Status indicators */
+.status-draft {
+    color: var(--color-muted);
+}
+
+.status-published {
+    color: var(--color-accent);
+}
+
+.status-archived {
+    color: #ef4444;
+}
+
+/* Login form */
+.login-container {
+    max-width: 320px;
+    margin: 100px auto;
+    padding: var(--space-4);
+}
+
+.login-title {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-4);
+    text-align: center;
+}
+
+.login-error {
+    color: #ef4444;
+    font-size: var(--text-xs);
+    margin-bottom: var(--space-3);
+    padding: var(--space-2);
+    border: 1px solid #ef4444;
+}
+
+/* Stat box */
+.admin-stat {
+    display: inline-block;
+    margin-right: var(--space-4);
+}
+
+.admin-stat-value {
+    font-size: var(--text-lg);
+    font-weight: 600;
+}
+
+.admin-stat-label {
+    font-size: var(--text-xs);
+    color: var(--color-muted);
+}
+
+/* Message */
+.admin-message {
+    padding: var(--space-2) var(--space-3);
+    margin-bottom: var(--space-3);
+    font-size: var(--text-xs);
+}
+
+.admin-message-success {
+    border: 1px solid var(--color-accent);
+    color: var(--color-accent);
+}
+
+.admin-message-error {
+    border: 1px solid #ef4444;
+    color: #ef4444;
+}
