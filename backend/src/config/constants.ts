@@ -8,9 +8,9 @@ export const CONSTANTS = {
 
     // Cache TTL (seconds)
     CACHE_TTL: {
-        POST: 300,        // 5 minutes
-        IDEA_GRAPH: 3600, // 1 hour
-        SEARCH: 600,      // 10 minutes
+        POST: 60,         // 1 minute
+        IDEA_GRAPH: 60,   // 1 minute (was 1 hour - too long)
+        SEARCH: 120,      // 2 minutes
     },
 
     // Content limits

@@ -1,6 +1,6 @@
-# Personal Thinking System
+# AryanLog
 
-A personal knowledge operating system that optimizes for depth, connection, and evolution of thought.
+Personal blog platform built with React + TypeScript + Node.js + MongoDB.
 
 ## Structure
 

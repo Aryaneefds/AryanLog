@@ -27,16 +27,16 @@ export function Home() {
     return (
         <main className="page">
             {/* Site identifier */}
-            <header className="mono text-xs muted mb-6">
-                bglog · personal thinking system
+            <header className="mono text-xs muted mb-8">
+                aryanlog · my blogs
             </header>
 
             {/* Main heading */}
-            <h1>What I'm Thinking About</h1>
+            <h1>Welcome to AryanLog</h1>
 
-            <p className="prose muted mb-5" style={{ maxWidth: '480px' }}>
-                A collection of evolving ideas. Some are refined, others are early sketches.
-                This is how I think.
+            <p className="prose muted mb-6" style={{ maxWidth: '520px' }}>
+                A space for my thoughts, ideas, and writings.
+                Documenting my journey in tech and beyond.
             </p>
 
             <hr className="divider" />
@@ -70,8 +70,8 @@ export function Home() {
             <hr className="divider" />
 
             {/* Recent posts */}
-            <section>
-                <div className="label mb-4">Recent Thinking</div>
+            <section className="mt-6">
+                <div className="label mb-4">Recent Posts</div>
 
                 {loading ? (
                     <p className="muted">Loading...</p>
